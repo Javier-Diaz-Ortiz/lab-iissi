@@ -3,21 +3,65 @@
   <head>
     <title>Example page</title>
     <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/utils/include.js"></script>
   </head>
-  <body>
-    <p>Hello, world!</p>
-    <a href="register.html">Go to register.html</a>
-
-    <p>My shopping list:</p>
-    <ul>
-      <li>Oranges</li>
-      <li>Pears</li>
-      <li>Apples</li>
-    </ul>
-    <img
-      src="/images/dogs.jpg"
-      title="Two dogs"
-      alt="Two dogs rest in a grass field"
-    />
+  <body class="dark">
+    <div id="page-header"></div>
+    <h2>Recent pictures</h2>
+    <a href="upload_picture.html">Upload a new picture</a>
+    <div class="gallery-container">
+      <div class="photo-block">
+        <div class="photo-header-block">
+          <h2 class="photo-title">Samoyed</h2>
+          <h3 class="photo-score">Score: 4.52</h3>
+        </div>
+        <div class="photo-image-block">
+          <img class="photo-image" src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" />
+        </div>
+        <div class="photo-metadata-block">
+          <p class="photo-description">A very good boy.</p>
+        </div>
+        <div class="photo-edit-block">
+          <button>Edit this photo</button>
+          <button>Delete this photo</button>
+        </div>
+      </div>
+      <div class="photo-block">
+        <div class="photo-header-block">
+          <h2 class="photo-title">Ej 2</h2>
+          <h3 class="photo-score">Prrrrrr</h3>
+        </div>
+        <div class="photo-image-block">
+          <img class="photo-image" src="https://www.pronto.es/files/main_image/uploads/2021/03/09/62aa61c859164.jpeg" />
+        </div>
+        <div class="photo-metadata-block">
+          <p class="photo-description">Kiko</p>
+        </div>
+        <div class="photo-edit-block">
+          <button>Edit this photo</button>
+          <button>Delete this photo</button>
+        </div>
+      </div>
+      <div class="photo-block">
+        <div class="photo-header-block">
+          <h2 class="photo-title">Ej 3</h2>
+          <h3 class="photo-score">r</h3>
+        </div>
+        <div class="photo-image-block">
+          <img class="photo-image" src="https://s1.eestatic.com/2021/11/24/malaga/vivir/629697799_216036956_1706x960.jpg" />
+        </div>
+        <div class="photo-metadata-block">
+          <p class="photo-description">Churumbel</p>
+        </div>
+        <div class="photo-edit-block">
+          <button>Edit this photo</button>
+          <button>Delete this photo</button>
+        </div>
+      </div>
+    </div>
+    <script>
+        include("header.html", "#page-header");
+        </script>
   </body>
 </html>
