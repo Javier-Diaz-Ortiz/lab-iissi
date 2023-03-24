@@ -5,48 +5,65 @@
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/js/utils/include.js"></script>
+    <script src="js/register.js" type="module"></script>
   </head>
   <body class="dark">
     <div id="page-header"></div>
     <h2>Register a new user:</h2>
-    <form>
+    <div id="errors">aaaa</div>
+    <form id="register-form">
       <div class="row">
-        <div class="col-md">Element 1</div>
-        <div class="col-md">Element 2</div>
-      </div>
-    </form>
-    <div class="row">
-      <div class="col-md">
-        <div class="form-group">
-          <label for="firstname-input">First name:</label>
-          <input
-            type="text"
-            class="form-control text-light bg-dark"
-            id="firstname-input"
-            name="firstName"
-            placeholder="First name"
-          />
+        <div class="col-md">
+          <div class="form-group">
+            <label for="firstname-input">First name:</label>
+            
+            <input
+              type="text"
+              class="form-control text-light bg-dark"
+              id="firstName"
+              name="firstName"
+              placeholder="First name"
+            />
+            <div class="form-group">
+              <label for="firstname-input">Password:</label>
+              <input
+                type="password"
+                class="form-control text-light bg-dark"
+                id="password"
+                name="password"
+                placeholder="password"
+              />
+
+              <div class="form-group">
+                <label for="firstname-input">Password2:</label>
+                <input
+                  type="password"
+                  class="form-control text-light bg-dark"
+                  id="password2"
+                  name="password2"
+                  placeholder="password2"
+                />
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-group">
+            <label for="lastname-input">Last name:</label>
+            <input
+              type="text"
+              class="form-control text-light bg-dark"
+              id="lastName"
+              name="lastName"
+              placeholder="Last name"
+            />
+          </div>
         </div>
       </div>
-      <div class="col-md">
-        <div class="form-group">
-          <label for="lastname-input">Last name:</label>
-          <input
-            type="text"
-            class="form-control text-light bg-dark"
-            id="lastname-input"
-            name="lastName"
-            placeholder="Last name"
-          />
+      <div class="row">
+        <div class="col-md text-center">
+          <button type="submit" class="btn btn-primary">Register</button>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md text-center">
-        <button type="submit" class="btn btn-primary">Register</button>
-      </div>
-    </div>
-    <!--<form> 
+      <!--<form> 
       <div class="form-group">
         <label for="username-input">Username:</label>
         <input
@@ -109,6 +126,7 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form> -->
+    </form>
     <script>
       include("header.html", "#page-header");
     </script>
